@@ -3,9 +3,11 @@ import { useDispatch } from 'react-redux';
 import { addTodoAsync } from '../redux/todoSlice';
 
 const AddTodoForm = () => {
+	// in the addForm we have input box that will allow the user to input some text and 
+	// we will use useState to store what the user types
 	const [value, setValue] = useState('');
 	const dispatch = useDispatch();
-
+// onsubmit function will be called on the form when the form is submitted
 	const onSubmit = (event) => {
 		event.preventDefault();
 		if (value) {

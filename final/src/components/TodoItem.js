@@ -16,6 +16,7 @@ const TodoItem = ({ id, title, completed }) => {
 	return (
 		<li className={`list-group-item ${completed && 'list-group-item-success'}`}>
 			<div className='d-flex justify-content-between'>
+			{/* todoIteme displays the item with the input  the title and the button*/}
 				<span className='d-flex align-items-center'>
 					<input
 						type='checkbox'

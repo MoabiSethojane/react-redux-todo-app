@@ -13,6 +13,8 @@ const TodoList = () => {
 
 	return (
 		<ul className='list-group'>
+		{/* use the map function to display each of the to do as a to do items component we pass 
+		properties e.g id, title and complete  */}
 			{todos.map((todo) => (
 				<TodoItem id={todo.id} title={todo.title} completed={todo.completed} />
 			))}
